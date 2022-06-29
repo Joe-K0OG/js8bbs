@@ -12,28 +12,7 @@ import os.path
 import settings
 
 # Original JS8Help By Paul VandenBosch - KC8WBK
-#
-# Modified by Joseph A. Counsil - K0OG - 6/24/2022
-# * Added user paramater block
-# * Added a second trigger to execute an external program
-#    specifying an executable file and an output file
-#    to read and report back to requesting station's inbox.
-#    If no output is generated, a "CMD COMPLETE" message
-#    is sent to requester's RX Text window (not to inbox).
 # Modified - K0OG - 6/27/2022
-# * Added external settings file settings.py
-# * Modified trigger command routine to execute multiple triggers
-# * Moved HELP? trigger to use the functional triggers.
-# * Limited triggers to be the first word after the callsigns.
-#
-# With this framework, and crude JS8Call BBS can be built.
-#
-##### NEXT STEPS #####
-# * The next step is to allow the remote station to pass parameters
-#   to the server to modify queries.
-# * Add an output log file of commands received, date, time
-#   requesting station callsign, and response data.
-##################################################################
 
 #####  User Configurable Parameters  #####
 #   Settings are read from settings.py   #
