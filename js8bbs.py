@@ -29,8 +29,10 @@ import settings
 # With this framework, and crude JS8Call BBS can be built.
 #
 ##### NEXT STEPS #####
-# The next step is to allow the remote station to pass parameters
-# to the server to modify queries.
+# * The next step is to allow the remote station to pass parameters
+#   to the server to modify queries.
+# * Add an output log file of commands received, date, time
+#   requesting station callsign, and response data.
 ##################################################################
 
 #####  User Configurable Parameters  #####
