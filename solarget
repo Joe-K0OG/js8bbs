@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Linux BASH script to pull Solar Data from NOAA,
+# parse it to a minimal data set for transmission
+# on JS8Call, or other slow digi modes.
+# *** Joseph A. Counsil, K0OG ***
+#
+# Output file in the current directory
+fout='solaroutput'
+
+# Download WWV data from NOAA web site
+data=$(curl -o - https://services.swpc.noaa.gov/text/wwv.txt)
+
+# Parse the data to Flux, A-index, and K-index numbers
+data=$(echo $data | \
+sed 's/:Pr.*flux /F/
+s/and.*A-index /A/
+s/\. The.*was / K/
+s/\. .*hours\.//')
+echo -n $data > $fout
+
+exit

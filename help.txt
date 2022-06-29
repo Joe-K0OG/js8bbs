@@ -1,0 +1,3 @@
+SOLAR? Get solar data
+DATE? SOLAR with date
+RUTHERE? sysop there?
