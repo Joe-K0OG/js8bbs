@@ -7,6 +7,8 @@ See Paul's projects at https://github.com/skyl4rk/
 
 Instructions and examples for setting up the system can be found in the settings.py file.
 
+<b>NOTE:</b>  This project is only intended to be a proof of concept.  I do not intend to further develop or provide support for it, but would like to see someone with programming skill and patience develop a JS8Call BBS back-end.  Such BBS tools can be useful for fun, but could also be useful for emergency communications support.
+
 73,<br>
 -Joe-<br>
 K0OG<br>
